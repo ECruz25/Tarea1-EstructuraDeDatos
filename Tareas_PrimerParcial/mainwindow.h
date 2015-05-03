@@ -2,7 +2,9 @@
 #define MAINWINDOW_H
 
 #include "Tarea1/tarea1.h"
+#include "Tarea2/tarea2.h"
 #include "Tarea3/tarea3.h"
+#include "Tarea4/tarea4.h"
 
 #include <QMainWindow>
 
@@ -26,9 +28,12 @@ private slots:
 
     void on_tarea1btn_2_clicked();
 
+    void on_tarea4btn_clicked();
+
 private:
     Tarea1* tarea1;
     Tarea3* tarea3;
+    Tarea4* tarea4;
     Ui::MainWindow *ui;
 };
 

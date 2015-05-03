@@ -39,3 +39,9 @@ void MainWindow::on_tarea1btn_2_clicked()
 
 }
 
+
+void MainWindow::on_tarea4btn_clicked()
+{
+    tarea4 = new Tarea4(this);
+    tarea4->show();
+}
