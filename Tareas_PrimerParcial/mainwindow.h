@@ -30,8 +30,11 @@ private slots:
 
     void on_tarea4btn_clicked();
 
+    void on_tarea2_clicked();
+
 private:
     Tarea1* tarea1;
+    Tarea2* tarea2;
     Tarea3* tarea3;
     Tarea4* tarea4;
     Ui::MainWindow *ui;

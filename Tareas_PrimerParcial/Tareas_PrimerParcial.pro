@@ -23,7 +23,8 @@ SOURCES += main.cpp\
     Tarea3/tarea3.cpp \
     Tarea3/arreglos.cpp \
     Tarea4/tarea4.cpp \
-    Tarea4/carta.cpp
+    Tarea4/carta.cpp \
+    Tarea2/arreglo.cpp
 
 HEADERS  += mainwindow.h \
     Tarea1/tarea1.h \
@@ -35,7 +36,8 @@ HEADERS  += mainwindow.h \
     Tarea3/tarea3.h \
     Tarea3/arreglos.h \
     Tarea4/tarea4.h \
-    Tarea4/carta.h
+    Tarea4/carta.h \
+    Tarea2/arreglo.h
 
 FORMS    += mainwindow.ui \
     Tarea1/tarea1.ui \
