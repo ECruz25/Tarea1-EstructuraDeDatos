@@ -169,7 +169,8 @@ void Tarea4::imprimir()
     ui->listWidget->clear();
     QString n;
     Carta* temp = inicio;
-    for(int i = 0; i < size; i++){
+    for(int i = 0; i < size; i++)
+    {
         n = n.number(temp->num);
         n.append(" ->");
         ui->listWidget->addItem(n);

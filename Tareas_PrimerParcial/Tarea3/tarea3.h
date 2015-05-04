@@ -23,6 +23,8 @@ public:
     void imprimir();
     int u;
     Arreglos* arreglo;
+    QString n;
+    int x;
 
 private slots:
     void on_clearBtn_clicked();

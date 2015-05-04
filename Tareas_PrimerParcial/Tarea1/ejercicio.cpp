@@ -64,9 +64,9 @@ bool Ejercicio::coloredAdjacents(Street *street)
 {
     for(int i=0;i<street->getAdjacents().length();i++)
     {
-        for(int j=0 ;j< this->coloreds.length();j++)
+        for(int j=0 ;j < this->coloreds.length();j++)
         {
-            if(street->getAdjacents().at(i)->getName()== this->coloreds.at(j)->getName())
+            if(street->getAdjacents().at(i)->getName() == this->coloreds.at(j)->getName())
             {
                 return true;
             }

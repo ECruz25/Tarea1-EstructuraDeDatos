@@ -15,6 +15,7 @@ Tarea3::Tarea3(QWidget *parent) :
     arreglo->size = 15;
     arreglo->agregados = 0;
     arreglo->actual = 0;
+    ui->text->hide();
     imprimir();
 }
 
@@ -48,6 +49,7 @@ void Tarea3::on_clearBtn_clicked()
     ui->listWidget->clear();
     arreglo->clear();
     u=0;
+    ui->text->hide();
 }
 
 void Tarea3::on_appendBtn_clicked()
@@ -60,15 +62,11 @@ void Tarea3::on_appendBtn_clicked()
     ui->textEdit->show();
     ui->textEdit_2->hide();
     u=1;
+    ui->text->hide();
 }
 
 void Tarea3::on_appGoBtn_clicked()
 {
-    switch(u)
-    {
-
-    }
-
 }
 
 void Tarea3::on_insertBtn_clicked()
@@ -81,6 +79,7 @@ void Tarea3::on_insertBtn_clicked()
     ui->textEdit_2->show();
     ui->goBtn->show();
     u = 2;
+    ui->text->hide();
 }
 
 
@@ -97,7 +96,14 @@ void Tarea3::on_goBtn_clicked()
             imprimir();
             break;
         case 3:
-            arreglo->search(ui->spinNum->value());
+            n.clear();
+            x = arreglo->search(ui->spinNum->value());
+            if(x >= 0)
+            {
+                n.append(n.number(x));
+                ui->text->setText(n);
+                ui->text->show();
+            }
             imprimir();
             break;
         case 4:
@@ -128,4 +134,5 @@ void Tarea3::on_removeBtn_clicked()
     ui->textEdit_2->show();
     ui->goBtn->show();
     u=4;
+    ui->text->hide();
 }
