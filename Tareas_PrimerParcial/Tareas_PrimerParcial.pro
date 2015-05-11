@@ -24,7 +24,11 @@ SOURCES += main.cpp\
     Tarea3/arreglos.cpp \
     Tarea4/tarea4.cpp \
     Tarea4/carta.cpp \
-    Tarea2/arreglo.cpp
+    Tarea2/arreglo.cpp \
+    Tarea6/nodo.cpp \
+    Tarea6/pila.cpp \
+    Tarea7/cola.cpp \
+    Tarea7/nodo.cpp
 
 HEADERS  += mainwindow.h \
     Tarea1/tarea1.h \
@@ -37,11 +41,17 @@ HEADERS  += mainwindow.h \
     Tarea3/arreglos.h \
     Tarea4/tarea4.h \
     Tarea4/carta.h \
-    Tarea2/arreglo.h
+    Tarea2/arreglo.h \
+    Tarea6/nodo.h \
+    Tarea6/pila.h \
+    Tarea7/cola.h \
+    Tarea7/nodo.h
 
 FORMS    += mainwindow.ui \
     Tarea1/tarea1.ui \
     Tarea2/tarea2.ui \
     Tarea3/tarea3.ui \
     Tarea3/tarea3.ui \
-    Tarea4/tarea4.ui
+    Tarea4/tarea4.ui \
+    Tarea6/pila.ui \
+    Tarea7/cola.ui
